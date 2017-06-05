@@ -29,6 +29,10 @@ var app = app || {};
 	};
 
 	app.TodoModel.prototype.addTodo = function (title) {
+		//if (this.todos.length > 2) return
+		//if (this.todos.filter(({ completed }) => completed).length >= 1) return
+		//if ((this.todos.length > 2) && (this.todos.filter(({ completed }) => completed).length >= 1)) return;
+
 		this.todos = this.todos.concat({
 			id: Utils.uuid(),
 			title: title,
