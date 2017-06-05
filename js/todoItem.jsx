@@ -89,7 +89,7 @@ var app = app || {};
 						<label onDoubleClick={this.handleEdit}>
 							{this.props.todo.title}
 						</label>
-						<button className="destroy" onClick={this.props.onDestroy} />
+						<button style={{display: 'block'}} className="destroy" onClick={this.props.onDestroy} />
 					</div>
 					<input
 						ref="editField"
